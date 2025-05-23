@@ -18,3 +18,8 @@ class ColetarDados(BaseCase):
             nome = produto.find_element("css selector", ".inventory_item_name").text
             descrição = produto.find_element("css selector", ".inventory_item_desc").text
             preço = produto.find_element("css selector", ".inventory_item_price").text
+            #Adiciona os dados na lista
+            nomes.append(nome)
+            descrições.append(descrição)
+            preços.append(preço)
+        
