@@ -22,4 +22,7 @@ class ColetarDados(BaseCase):
             nomes.append(nome)
             descrições.append(descrição)
             preços.append(preço)
+        print(nomes)
+        print(descrições) 
+        print(preços)  
         
