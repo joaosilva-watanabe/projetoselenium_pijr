@@ -11,3 +11,4 @@ class LoginSauceDemo(BaseCase):
 
         #Interagindo com o botão de login
         self.click("#login-button")
+
