@@ -1,4 +1,5 @@
 from seleniumbase import BaseCase
+
 class LoginSauceDemo(BaseCase):
     def login(self):
         #Abrir o navegador
