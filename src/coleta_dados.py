@@ -13,3 +13,8 @@ class ColetarDados(BaseCase):
         preços = []
         #Acha os produtos
         produtos = self.find_elements(".inventory_item")
+        #Percorre a lista de produtos
+        for produto in produtos:
+            nome = produto.find_element("css selector", ".inventory_item_name").text
+            descrição = produto.find_element("css selector", ".inventory_item_desc").text
+            preço = produto.find_element("css selector", ".inventory_item_price").text
