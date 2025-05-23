@@ -7,3 +7,7 @@ class ColetarDados(BaseCase):
         self.open("https://www.saucedemo.com/")
         #Espera o carregamento da página
         self.wait_for_element(".quote")
+        #Cria listas para armazenar os dados
+        nomes = []
+        descrições = []
+        preços = []
