@@ -6,8 +6,10 @@ class ColetarDados(BaseCase):
         #Abrir a página no navegador
         self.open("https://www.saucedemo.com/")
         #Espera o carregamento da página
-        self.wait_for_element(".quote")
+        self.wait_for_element(".inventory_list")
         #Cria listas para armazenar os dados
         nomes = []
         descrições = []
         preços = []
+        #Acha os produtos
+        produtos = self.find_elements(".inventory_item")
