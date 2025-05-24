@@ -2,7 +2,7 @@ from seleniumbase import BaseCase
 
 class ColetarDados(BaseCase):
     #Definindo a função para salvar os dados
-    def salvar_csv(self, nomes, descricoes, precos):
+    def salvar_csv(self, nomes, precos, descricoes):
         import csv
 
         with open('../Data/info.csv', 'w', newline='', encoding='utf8') as arquivo:
