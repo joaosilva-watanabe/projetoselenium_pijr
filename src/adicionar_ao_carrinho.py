@@ -2,9 +2,12 @@ from seleniumbase import BaseCase
 
 class AdicionarAoCarrinho(BaseCase):
     def adicionar_produtos(self):
+        #Encontrando os produtos
         produtos = self.find_elements(".btn_inventory")
-        total_de_produtos = 0
+
+        #loop para clicar nos botões para adicionar ao carrinho
         for produto in produtos:
             produto.click()
-            total_de_produtos += 1
+
+        #Clicando no botão para concluir o processo
         self.click("#shopping_cart_container")

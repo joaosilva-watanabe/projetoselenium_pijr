@@ -2,11 +2,12 @@ from seleniumbase import BaseCase
 
 class FinalizarCompra(BaseCase):
     def concluir_compra(self):
+        valor_total = self.get_text(".summary_total_label")
 
         # Buscando as informações da compra
-        meio_de_pagamento = self.get_text(".summary_value_label", timeout= None)
-        forma_de_entrega = self.get_text(".summary_value_label", timeout= None)
-        valor_total = self.get_text(".summary_total_label")
+        detalhes_da_compra = self.find_elements(".summary_value_label")
+        meio_de_pagamento = detalhes_da_compra[0].text
+        forma_de_entrega = detalhes_da_compra[1].text
 
         #Clicando no botão para finalizar a compra
         self.click("#finish")
