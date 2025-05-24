@@ -6,9 +6,8 @@ class LoginSauceDemo(BaseCase):
         self.open("https://www.saucedemo.com/")
 
         #Digitando as credenciais
-        self.type("#Username" ,"standard_user")
-        self.type("#Password", "secret_sauce")
+        self.type("#user-name" ,"standard_user")
+        self.type("#password", "secret_sauce")
 
         #Interagindo com o botão de login
         self.click("#login-button")
-
