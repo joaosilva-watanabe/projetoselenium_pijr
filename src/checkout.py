@@ -2,9 +2,11 @@ from seleniumbase import BaseCase
 
 class Checkout(BaseCase):
     def preencher_formulario_checkout(self):
-
         #Clicando no botão de checkout
         self.click("#checkout")
+
+        # Espera os campos do formulário serem carregados
+        self.wait_for_element("#first-name")
 
         #Preenchendo o formulário
         self.type("#first-name", "Trainee")

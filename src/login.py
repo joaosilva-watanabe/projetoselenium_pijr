@@ -11,3 +11,6 @@ class LoginSauceDemo(BaseCase):
 
         #Interagindo com o botão de login
         self.click("#login-button")
+
+        # Espera explícita para garantir que a página de produtos carregue completamente
+        self.wait_for_element(".inventory_list")
