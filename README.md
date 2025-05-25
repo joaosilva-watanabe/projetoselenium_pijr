@@ -6,6 +6,7 @@
 
 ### Sobre o projeto
 O presente repositório armazena todos os arquivos da atividade de automatização de Web Scraping com Selenium, proposto para os trainees da Pi Junior. 
+
 A ideia geral do projeto é automatizar a interação com o site Swag Labs (ou SauceDemo -- disponível em: "https://www.saucedemo.com/") um e-commerce de demonstração, utilizando SeleniumBase para a automação. 
 
 ### Objetivos
