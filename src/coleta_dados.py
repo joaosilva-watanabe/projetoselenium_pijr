@@ -8,10 +8,10 @@ class ColetarDados(BaseCase):
         with open('../data/info.csv', 'w', newline='', encoding='utf8') as arquivo:
             writer = csv.writer(arquivo)
 
-            # Escrevendo o cabeçalho
+            #Escrevendo o cabeçalho
             writer.writerow(['Nome do Produto','Preço ($)','Descrição'])
 
-            # Escrever as informações
+            #Escrever as informações
             for i in range(len(nomes)):
                 writer.writerow([nomes[i], precos[i], descricoes[i]])
             print("Dados salvos em 'info.csv'")

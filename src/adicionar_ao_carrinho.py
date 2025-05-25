@@ -2,7 +2,7 @@ from seleniumbase import BaseCase
 
 class AdicionarAoCarrinho(BaseCase):
     def adicionar_produtos(self):
-        # Espera para que todos os botões de adicionar ao carrinho sejam carregados
+        #Espera para que todos os botões de adicionar ao carrinho sejam carregados
         self.wait_for_element(".btn_inventory")
 
         #Encontrando os produtos
